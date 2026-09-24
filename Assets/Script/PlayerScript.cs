@@ -52,4 +52,10 @@ public class PlayerMovementScript : MonoBehaviour
     
 
     }
+
+    public void Attack1(InputAction.CallbackContext context){
+        if(context.performed && moveInput.x == 0 && moveInput.y == 0){
+             animator.SetTrigger("Attack1");
+        }
+    }
 }
