@@ -110,6 +110,29 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+     public void Pummel(InputAction.CallbackContext context){
+       if(context.performed && moveInput.x == 0 && moveInput.y == 0 && !crouching){
+             animator.SetTrigger("Pummel");
+              
+        }
+        else if(context.performed && (moveInput.x != 0 || moveInput.y != 0) && !crouching){
+            animator.SetFloat("LastX", moveInput.x);
+            animator.SetFloat("LastY", moveInput.y);
+            animator.SetTrigger("Pummel");
+        }
+    }
+
+    public void FrontFlip(InputAction.CallbackContext context){
+       if(context.performed && moveInput.x == 0 && moveInput.y == 0 && !crouching){
+             animator.SetTrigger("FrontFlip");
+        }
+        else if(context.performed && (moveInput.x != 0 || moveInput.y != 0) && !crouching){
+            animator.SetFloat("LastX", moveInput.x);
+            animator.SetFloat("LastY", moveInput.y);
+            animator.SetTrigger("FrontFlip");
+        }
+    }
+
      public void Crouch(InputAction.CallbackContext context){
        if(context.performed && moveInput.x == 0 && moveInput.y == 0){
              

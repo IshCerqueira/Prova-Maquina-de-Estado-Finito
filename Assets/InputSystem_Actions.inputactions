@@ -77,9 +77,29 @@
                     "priority": 0
                 },
                 {
+                    "name": "FrontFlip",
+                    "type": "Button",
+                    "id": "e1c5dd0f-45f7-4fc0-baa7-254a5a3e80d9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
                     "name": "Crouch",
                     "type": "Button",
                     "id": "a7e14464-d801-464e-a393-2537102aa7ce",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Pummel",
+                    "type": "Button",
+                    "id": "83368d49-e086-44cc-9564-d8cd6acca63e",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -316,6 +336,28 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "209465e2-3fe2-4b6a-a2f1-2346061c39e7",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "FrontFlip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5d3450fd-fe3f-4709-b2d0-4070bb77dce4",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Pummel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
