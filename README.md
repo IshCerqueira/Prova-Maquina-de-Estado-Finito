@@ -15,3 +15,9 @@ A lista acima representa os comandos que o jogador pode executar dentro do jogo 
 ![Scheme](Assets/image1.png)
 
 A administração de estados foi realizada através do animator existente na Unity em conjunto ao new input system. Nesse modelo o jogador tem como estado inicial uma postura Idle que pode ser alternada dinamicamente através de comandos citados anteriormente neste documento. Todas as ligações das maquinas de estado podem ser vistos na imagem acima.
+
+## 4. Links
+
+É possivel testar o projeto de forma online através do seu navegador através do Link:
+É possivel também assistir um video exemplo de gameplay através do Link: https://youtu.be/K_VDFZ5HBww
+ 
