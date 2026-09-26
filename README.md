@@ -10,7 +10,7 @@ O projeto Unity chamado Barbarians surge no contexto de uma avaliação na maté
 
 A lista acima representa os comandos que o jogador pode executar dentro do jogo e a resposta para cada um deles. Para além disso existem interações de estados específicos como o "morto" que ocorre quando o jogador interage com elementos do cenário, como o fogo.
 
-## 3. Comandos
+## 3. Diagramas
 
 ![Scheme](Assets/image1.png)
 
