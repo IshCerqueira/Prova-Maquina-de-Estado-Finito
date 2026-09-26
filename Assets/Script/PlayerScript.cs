@@ -122,6 +122,54 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    public void QuickShot(InputAction.CallbackContext context){
+       if(context.performed && moveInput.x == 0 && moveInput.y == 0 && !crouching){
+             animator.SetTrigger("QuickShot");
+              
+        }
+        else if(context.performed && (moveInput.x != 0 || moveInput.y != 0) && !crouching){
+            animator.SetFloat("LastX", moveInput.x);
+            animator.SetFloat("LastY", moveInput.y);
+            animator.SetTrigger("QuickShot");
+        }
+    }
+
+    public void QuickSlide(InputAction.CallbackContext context){
+       if(context.performed && moveInput.x == 0 && moveInput.y == 0 && !crouching){
+             animator.SetTrigger("QuickSlide");
+              
+        }
+        else if(context.performed && (moveInput.x != 0 || moveInput.y != 0) && !crouching){
+            animator.SetFloat("LastX", moveInput.x);
+            animator.SetFloat("LastY", moveInput.y);
+            animator.SetTrigger("QuickSlide");
+        }
+    }
+    
+     public void Rolling(InputAction.CallbackContext context){
+       if(context.performed && moveInput.x == 0 && moveInput.y == 0 && !crouching){
+             animator.SetTrigger("Rolling");
+              
+        }
+        else if(context.performed && (moveInput.x != 0 || moveInput.y != 0) && !crouching){
+            animator.SetFloat("LastX", moveInput.x);
+            animator.SetFloat("LastY", moveInput.y);
+            animator.SetTrigger("Rolling");
+        }
+    }
+
+    public void Slide(InputAction.CallbackContext context){
+       if(context.performed && moveInput.x == 0 && moveInput.y == 0 && !crouching){
+             animator.SetTrigger("Slide");
+              
+        }
+        else if(context.performed && (moveInput.x != 0 || moveInput.y != 0) && !crouching){
+            animator.SetFloat("LastX", moveInput.x);
+            animator.SetFloat("LastY", moveInput.y);
+            animator.SetTrigger("Slide");
+        }
+    }
+
     public void FrontFlip(InputAction.CallbackContext context){
        if(context.performed && moveInput.x == 0 && moveInput.y == 0 && !crouching){
              animator.SetTrigger("FrontFlip");
@@ -130,6 +178,28 @@ public class PlayerScript : MonoBehaviour
             animator.SetFloat("LastX", moveInput.x);
             animator.SetFloat("LastY", moveInput.y);
             animator.SetTrigger("FrontFlip");
+        }
+    }
+
+        public void Especial1(InputAction.CallbackContext context){
+       if(context.performed && moveInput.x == 0 && moveInput.y == 0 && !crouching){
+             animator.SetTrigger("Especial1");
+        }
+        else if(context.performed && (moveInput.x != 0 || moveInput.y != 0) && !crouching){
+            animator.SetFloat("LastX", moveInput.x);
+            animator.SetFloat("LastY", moveInput.y);
+            animator.SetTrigger("Especial1");
+        }
+    }
+
+     public void Especial2(InputAction.CallbackContext context){
+       if(context.performed && moveInput.x == 0 && moveInput.y == 0 && !crouching){
+             animator.SetTrigger("Especial2");
+        }
+        else if(context.performed && (moveInput.x != 0 || moveInput.y != 0) && !crouching){
+            animator.SetFloat("LastX", moveInput.x);
+            animator.SetFloat("LastY", moveInput.y);
+            animator.SetTrigger("Especial2");
         }
     }
 
@@ -149,16 +219,30 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    public void Run(InputAction.CallbackContext context){
+       if(context.performed && (moveInput.x != 0 || moveInput.y != 0) && !crouching){
+             moveSpeed = 3f;
+             animator.SetFloat("Speed", moveSpeed);
+        }
+
+        else if(context.canceled){
+            moveSpeed = 1f;
+             animator.SetFloat("Speed", moveSpeed);
+        }
+    }
+
   
     void OnTriggerEnter2D(Collider2D other)
     {
-       
+       if(other.tag == "Fogo"){
         animator.SetFloat("LastX", moveInput.x);
         animator.SetFloat("LastY", moveInput.y);
         rb.linearVelocity = ZeroSpeed;
-       alive = false;
-       animator.SetBool("IsDead", true); 
+        alive = false;
+        animator.SetBool("IsDead", true); 
     }
+       }
+        
 
 
 

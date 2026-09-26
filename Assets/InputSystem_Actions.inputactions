@@ -67,6 +67,16 @@
                     "priority": 0
                 },
                 {
+                    "name": "Crouch",
+                    "type": "Button",
+                    "id": "a7e14464-d801-464e-a393-2537102aa7ce",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
                     "name": "CastSpell",
                     "type": "Button",
                     "id": "b378e69f-23f2-4e2d-9d67-97d403da2d06",
@@ -87,9 +97,9 @@
                     "priority": 0
                 },
                 {
-                    "name": "Crouch",
+                    "name": "Pummel",
                     "type": "Button",
-                    "id": "a7e14464-d801-464e-a393-2537102aa7ce",
+                    "id": "83368d49-e086-44cc-9564-d8cd6acca63e",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -97,9 +107,69 @@
                     "priority": 0
                 },
                 {
-                    "name": "Pummel",
+                    "name": "QuickShot",
                     "type": "Button",
-                    "id": "83368d49-e086-44cc-9564-d8cd6acca63e",
+                    "id": "7a87684d-7986-43b9-95ff-ac837679630c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "QuickSlide",
+                    "type": "Button",
+                    "id": "e9d9c2c5-097c-4e37-b2ae-7f29df0c81a7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Rolling",
+                    "type": "Button",
+                    "id": "883539c7-acaa-44bb-a8ee-ad3b199d4de3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Run",
+                    "type": "Button",
+                    "id": "c94e3996-f13e-4a91-b227-51dcb284b502",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Especial1",
+                    "type": "Button",
+                    "id": "69216a28-4c39-44cc-b2bc-80d931182b2d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Especial2",
+                    "type": "Button",
+                    "id": "98badc1b-de11-4656-8159-98a68c5f090c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Slide",
+                    "type": "Button",
+                    "id": "4127abe6-f07e-49a0-b1a4-2237dd10d7a4",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -358,6 +428,83 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Pummel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4e7c0122-295b-4cca-b5a5-ea5ebe9b3b69",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "QuickShot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c4c1bc47-7ece-4690-9aab-9ae92d8209a7",
+                    "path": "<Keyboard>/alt",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "QuickSlide",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2568fb05-25a1-44a9-b737-3c12b4a76158",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Rolling",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ce45cac6-5d1e-4328-873b-40f068d36958",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "93ade6a3-3add-459c-b38c-e3cd575f7cc8",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Especial1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "75db6c51-70f6-4939-98ad-89ff7fd89112",
+                    "path": "<Keyboard>/6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Especial2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "26f1ac30-e213-4d3d-b156-290c3726d9e6",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Slide",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
