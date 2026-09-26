@@ -18,6 +18,6 @@ A administração de estados foi realizada através do animator existente na Uni
 
 ## 4. Links
 
-É possivel testar o projeto de forma online através do seu navegador através do Link:
+É possivel testar o projeto de forma online através do seu navegador através do Link: https://play.unity.com/en/games/077e3357-16b7-4783-b037-f0ab5568f5a1/barbarians
 É possivel também assistir um video exemplo de gameplay através do Link: https://youtu.be/K_VDFZ5HBww
  
